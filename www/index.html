@@ -148,6 +148,17 @@
       })
     }
 
+     function searchDefence(){
+      let defence = parseInt($("#defence").val(), 10);
+      let TestDataClass = ncmb.DataStore(db);
+      TestDataClass
+      .equalTo("defence", defence)
+      .fetchAll()
+      .then(function(results) {
+        showResults(results);
+      })
+    }
+
     </script>
 </head>
 <body>
