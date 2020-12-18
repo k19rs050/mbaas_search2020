@@ -22,10 +22,10 @@ input {
 }
 
 .btn {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 16pt;
-  height: 4ex;
+  margin-top: 7px;
+  margin-bottom: 3px;
+  font-size: 12pt;
+  height: 3ex;
   width: 5em;
   border-radius: 10px;
   color: white;
