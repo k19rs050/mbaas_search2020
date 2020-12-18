@@ -125,6 +125,17 @@
         showResults(results);
       })
     }
+
+      function searchAttackLT(){
+      let attack = parseInt($("#attack").val(), 10);
+      let TestDataClass = ncmb.DataStore(db);
+      TestDataClass
+      .lessThan("attack", attack)
+      .fetchAll()
+      .then(function(results) {
+        showResults(results);
+      })
+    }
    
 
     </script>
