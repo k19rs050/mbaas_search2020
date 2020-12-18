@@ -137,6 +137,16 @@
       })
     }
    
+      function searchAttackGT(){
+      let attack = parseInt($("#attack").val(), 10);
+      let TestDataClass = ncmb.DataStore(db);
+      TestDataClass
+      .greaterThan("attack", attack)
+      .fetchAll()
+      .then(function(results) {
+        showResults(results);
+      })
+    }
 
     </script>
 </head>
