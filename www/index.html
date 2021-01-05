@@ -51,6 +51,7 @@
       TestDataClass.order("name", false).fetchAll()
       .then(function(results) {
         for(let i=0; i<results.length; i++){
+          let msg="";
            msg += results[i].get("attack") + "<br>";
       })
     }
